@@ -47,6 +47,30 @@ img {
   max-width: 100%;
 }
 
+/* Styles */
+
+body {
+  background-color: var(--primary);
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  height: 100svh;
+}
+
+.blog-preview-card {
+  --_base-radius: 1.5rem;
+  max-width: 20.9375rem;
+  padding: 1.5rem;
+  border-radius: var(--_base-radius);
+  background-color: var(--white);
+
+  & > img {
+    border-radius: calc(var(--_base-radius) / 2);
+  }
 }
 
 .chip {
